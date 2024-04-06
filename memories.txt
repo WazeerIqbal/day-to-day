@@ -1,0 +1,31 @@
+componentDidMount:
+    CompunentDidMount run after thr render methode, So first run render then run componentDidMount,
+    and one more more thing condtructor will reun before render.
+    1-constructor
+    2-render 
+    3-componentDidMount
+    https://newsapi.org/v2/top-headlines?country=us&apiKey=f1abbbb503c744abbbcdf219f36bc94c
+
+Hooks in React JS:
+    useState = Using this hook we initialize the value of state and update the value of state.
+        we can return two thing using this hook initile text and it's change value
+        let [text,setText] = useState('initile text')
+        setText = we update later
+        text = initile text, is the part of state
+    
+    useEffect = In useEffect we perform side effect e.g the work we perform in componentDidMount we perform
+                this work in useEffect. Suppose our compoment is update and we want to perform something,
+		so we put these thing in useEffect and perform this task.
+                If our state varible is change then this task will be perform or we perform side task.
+		Means perform side task if our state is change. 
+                If our text change then alert will be show. The function perform by componentDidUpdate will perform useEffect. 
+    useContext:
+                If we have a lot of component and inside a compoment we have more compoment means compoment inside a compoment then
+		 a complex compoment tree will made and if we want to pass 'props' in below in 'aap.js' we perform 'props' drill
+		 (props drills means pass one props to another and another to another and another prop to other compoment this is called prop drill)
+		 in pervious app we pass props from 'Aap.js' to 'News.js' and 'News.js' to 'NewsItem.js' and suppose there
+		 is a compoment inside the 'NewsItem.js' and we also want to pass this 'props' to inside Item.
+		 So 'ContextApi' avilabe this function globally. We can accsess any function, any state, that is present in 'context' we can use. 
+    useRef:     
+                useRef return 'mutable' reference object in 'mutable' reference object their is a property called 'dot current' 
+		(.current) so we can point any elememt inside the "DOM". It is a holder where any 'DOM' elememt can be present in (.current).        
